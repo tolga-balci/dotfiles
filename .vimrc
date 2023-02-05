@@ -3,13 +3,14 @@ set title
 set ruler
 set number
 set guioptions=T
-"set wrap
+set wrap
 "set hlsearch
 set wildmenu
 set incsearch "highlight search results as you type
+set hidden
+set autowrite
 set smartcase
 set cursorline
-" set cursorcolumn
 syntax enable
 
 
@@ -17,7 +18,6 @@ syntax enable
 filetype on
 filetype plugin on
 filetype indent on
-set wrap
 set tabstop=4
 
 
@@ -27,21 +27,18 @@ hi Search guibg=peru guifg=wheat
 hi Search cterm=NONE ctermfg=grey ctermbg=blue
 hi Visual term=reverse cterm=reverse guibg=Grey
 
-
-"execute pathogen#infect()
-
 "--- AutoCommands: Markdown
 au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,README.md  setf markdown
 au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
+
+autocmd TextChanged, TextChangedI * silent write
 
 "--- EasyAlign Plugin
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
 "--- WSL Yank Support
-
 let s:clip = '/mnt/c/Windows/system32/clip.exe'
-
 if executable(s:clip)
     augroup WSLYank
            autocmd!
@@ -49,7 +46,8 @@ if executable(s:clip)
            augrıyo END
 endif
 
- 
+"--- MAP KEYS
+map <F2> i```<CR><CR>```<Esc>k
 
 "--- This should be the last line:
 se mouse+=a
