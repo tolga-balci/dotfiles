@@ -138,6 +138,7 @@ set -o vi
 shopt -s cdable_vars
 
 OneDrive='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/'
+Notes='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/My Notes'
 Customers='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers'
 Escalations='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers/_Escalations'
 CustomerReports='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customer Reports/'

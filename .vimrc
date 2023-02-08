@@ -33,6 +33,11 @@ au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 
 autocmd TextChanged, TextChangedI * silent write
 
+"--- FORCE LOAD ALL PLUGINS
+packloadall
+let g:table_mode_corner='|'
+
+
 "--- EasyAlign Plugin
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
