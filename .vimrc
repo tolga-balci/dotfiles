@@ -11,6 +11,8 @@ set hidden
 set autowrite
 set smartcase
 set cursorline
+set splitbelow
+set splitright
 syntax enable
 
 
@@ -27,7 +29,7 @@ hi Search guibg=peru guifg=wheat
 hi Search cterm=NONE ctermfg=grey ctermbg=blue
 hi Visual term=reverse cterm=reverse guibg=Grey
 
-"--- AutoCommands: Markdown
+"--- AUTOCOMMANDS: MARKDOWN
 au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,README.md  setf markdown
 au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 
