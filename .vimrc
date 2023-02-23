@@ -44,7 +44,7 @@ let g:table_mode_corner='|'
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
-"--- WSL Yank Support
+"--- WSL YANK SUPPORT
 let s:clip = '/mnt/c/Windows/system32/clip.exe'
 if executable(s:clip)
     augroup WSLYank

@@ -77,7 +77,7 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto --group-directories-first'
+    alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -134,9 +134,6 @@ fi
 # set vim mode for terminal
 set -o vi
 
-# Aliases for $PATH
-export PATH="$HOME/.local/bin:$PATH"
-
 # Aliases for long directory paths
 shopt -s cdable_vars
 
@@ -146,14 +143,4 @@ Customers='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customer
 Escalations='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers/_Escalations'
 CustomerReports='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customer Reports/'
 AppData='/mnt/c/Users/tolga.balci/AppData'
-ADIB='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers/Abu Dhabi Islamic Bank'
-COSMOTE='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers/COSMOTE'
-ESB='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers/ESB'
-Finansbank='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers/Finansbank'
-Garanti='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers/Garanti Bankasi'
-Isbank='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers/Isbank'
-KocSistem='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers/KocSistem'
-RTA='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers/RT Authority'
-TT='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers/Turk Telekom'
-Vodafone='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers/Vodafone'
-YKB='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers/Yapi Kredi Bank (YKB)'
+/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers/Abu Dhabi Islamic Bank
