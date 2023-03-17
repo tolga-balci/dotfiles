@@ -54,7 +54,8 @@ if executable(s:clip)
 endif
 
 "--- MAP KEYS
-map <F2> i```<CR><CR>```<Esc>k
+map <F2> o```<CR><CR>```<Esc>o<Esc>kkkA<Space>
+map <F3> O```<Esc>jjI```<Esc>kkA<Space>
 
 "--- This should be the last line:
 se mouse+=a
