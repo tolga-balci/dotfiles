@@ -32,6 +32,7 @@ hi Visual term=reverse cterm=reverse guibg=Grey
 "--- AUTOCOMMANDS: MARKDOWN
 au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,README.md  setf markdown
 au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
+au BufNewFile,BufRead *.json setf json
 
 autocmd TextChanged, TextChangedI * silent write
 

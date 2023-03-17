@@ -57,9 +57,11 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]$ '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    #PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -139,3 +141,4 @@ shopt -s cdable_vars
 OneDrive=/mnt/c/Users/tbalc/OneDrive/
 AppData=/mnt/c/Users/tbalc/AppData
 Torrents=/mnt/c/Users/tbalc/Downloads/Arda/_Torrents
+Notes=/mnt/c/Users/tbalc/OneDrive/My-Notes
