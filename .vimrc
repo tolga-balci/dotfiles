@@ -21,7 +21,7 @@ filetype on
 filetype plugin on
 filetype indent on
 set tabstop=4
-
+set scrolloff=5
 
 "--- THEMES AND VISIBILITY
 set background=light
@@ -57,6 +57,7 @@ endif
 "--- MAP KEYS
 map <F2> o```<CR><CR>```<Esc>o<Esc>kkkA<Space>
 map <F3> O```<Esc>jjI```<Esc>kkA<Space>
+map <F4> ~w
 
 "--- This should be the last line:
 se mouse+=a
