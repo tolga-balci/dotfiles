@@ -14,8 +14,13 @@ set cursorline
 set splitbelow
 set splitright
 set nocompatible
+set clipboard=unnamed "allow copy-paste outside of vim
+set showcmd
 syntax enable
 
+"--- MOVEMENT
+"nnoremap j gj  "--Move down by visual line
+"nnoremap k gk  "--Move up by visual line
 
 "--- FILETYPES AND TYPING
 filetype on
@@ -39,10 +44,19 @@ hi Search guibg=peru guifg=wheat
 hi Search cterm=NONE ctermfg=grey ctermbg=blue
 hi Visual term=reverse cterm=reverse guibg=Grey
 
-"--- AUTOCOMMANDS: MARKDOWN
+"--- AUTOCOMMANDS: MARKDOWN, JSON, PYTHON
 au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,README.md  setf markdown
 au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 au BufNewFile,BufRead *.json setf json
+au BufNewFile,BufRead *.py 
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 autocmd TextChanged, TextChangedI * silent write
 
