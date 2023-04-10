@@ -1,7 +1,7 @@
 "--- DISPLAY
 set title
 set ruler
-set number
+set number relativenumber
 set guioptions=T
 set wrap
 "set hlsearch
@@ -13,6 +13,7 @@ set smartcase
 set cursorline
 set splitbelow
 set splitright
+set nocompatible
 syntax enable
 
 
@@ -20,8 +21,17 @@ syntax enable
 filetype on
 filetype plugin on
 filetype indent on
-set tabstop=4
 set scrolloff=5
+
+" TO BE USED AS PYTHON IDE
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+
+" DELETE ALL TRAILING WHITESPACES ON EXIT (HANDY FOR PYTHON EDITING)
+" autocmd BufWritePre %s/\s\+$//e
 
 "--- THEMES AND VISIBILITY
 set background=light
