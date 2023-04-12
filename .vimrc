@@ -16,6 +16,7 @@ set splitright
 set nocompatible
 set clipboard=unnamed "allow copy-paste outside of vim
 set showcmd
+set selection=exclusive "exclude newline character in selection
 syntax enable
 
 "--- MOVEMENT
