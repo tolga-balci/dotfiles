@@ -33,6 +33,7 @@ set scrolloff=5
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set textwidth=79
 set expandtab
 set autoindent
 
@@ -49,14 +50,8 @@ hi Visual term=reverse cterm=reverse guibg=Grey
 au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,README.md  setf markdown
 au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 au BufNewFile,BufRead *.json setf json
-au BufNewFile,BufRead *.py 
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
+"au BufNewFile,BufRead *.py 
+set fileformat=unix
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 autocmd TextChanged, TextChangedI * silent write
@@ -84,6 +79,9 @@ map <F2> o```<CR><CR>```<Esc>o<Esc>kkkA<Space>
 map <F3> O```<Esc>jjI```<Esc>kkA<Space>
 map <F4> ~w
 map <F5> <Esc>:TableModeToggle<Return>
+
+"--- MACROS
+let @w='0€ýaf(ldt/i.€ýaF]i|5000'
 
 "--- This should be the last line:
 se mouse+=a
