@@ -79,6 +79,7 @@ map <F2> o```<CR><CR>```<Esc>o<Esc>kkkA<Space>
 map <F3> O```<Esc>jjI```<Esc>kkA<Space>
 map <F4> ~w
 map <F5> <Esc>:TableModeToggle<Return>
+map <F6> 0<Esc>f(ldt/i.<Esc>0
 
 "--- MACROS
 let @w='0€ýaf(ldt/i.€ýaF]i|5000'
