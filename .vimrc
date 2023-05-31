@@ -52,7 +52,7 @@ au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 au BufNewFile,BufRead *.json setf json
 "au BufNewFile,BufRead *.py 
 set fileformat=unix
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h "match BadWhitespace /\s\+$/
 
 autocmd TextChanged, TextChangedI * silent write
 
