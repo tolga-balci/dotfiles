@@ -98,6 +98,14 @@ alias bitwarden='/home/tolga/Downloads/bw'
 alias wtf='/home/tolga/Downloads/wtfutil/wtfutil'
 alias wtfutil='/home/tolga/Downloads/wtfutil/wtfutil'
 
+# Keep history from all sessions and avoid duplicates
+# Avoid duplicates
+HISTCONTROL=ignoredups:erasedups
+# When the shell exits, append to the history file instead of overwriting it
+shopt -s histappend
+
+# After each command, append to the history file and reread it
+PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
