@@ -29,30 +29,27 @@ filetype plugin on
 filetype indent on
 set scrolloff=5
 
-" TO BE USED AS PYTHON IDE
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-"set textwidth=79 
-set expandtab
-set autoindent
+"--- PYTHON IDE SETTINGS
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h "match BadWhitespace /\s\+$/
+            \ set tabstop=4
+            \ set softtabstop=4
+            \ set shiftwidth=4
+            \ set textwidth=79 
+            \ set expandtab
+            \ set autoindent
+            \ set encoding=utf-8
 
-" DELETE ALL TRAILING WHITESPACES ON EXIT (HANDY FOR PYTHON EDITING)
-" autocmd BufWritePre %s/\s\+$//e
-
-"--- THEMES AND VISIBILITY
+"-- THEMES AND VISIBILITY
 set background=light
 hi Search guibg=peru guifg=wheat
 hi Search cterm=NONE ctermfg=grey ctermbg=blue
 hi Visual term=reverse cterm=reverse guibg=Grey
 
-"--- AUTOCOMMANDS: MARKDOWN, JSON, PYTHON
+"--- AUTOCOMMANDS: MARKDOWN, JSON
 au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,README.md  setf markdown
 au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 au BufNewFile,BufRead *.json setf json
-"au BufNewFile,BufRead *.py 
 set fileformat=unix
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h "match BadWhitespace /\s\+$/
 
 autocmd TextChanged, TextChangedI * silent write
 
@@ -80,6 +77,13 @@ map <F3> O```<Esc>jjI```<Esc>kkA<Space>
 map <F4> ~w
 map <F5> <Esc>:TableModeToggle<Return>
 map <F6> 0<Esc>f(ldt/i.<Esc>0
+
+
+"--- MAP Commands
+:command W w
+:command Q q
+:command Wq wq
+:command WQ wq
 
 "--- MACROS
 let @w='0€ýaf(ldt/i.€ýaF]i|5000'

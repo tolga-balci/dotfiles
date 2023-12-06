@@ -150,9 +150,11 @@ shopt -s cdable_vars
 
 OneDrive='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/'
 Notes='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/My Notes'
+Training='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/My Notes/Training'
 Customers='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers'
 Escalations='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers/_Escalations'
 CustomerReports='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customer Reports/'
+CustomerSuccess='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customer Success/'
 AppData='/mnt/c/Users/tolga.balci/AppData'
 ADIB='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers/Abu Dhabi Islamic Bank'
 COSMOTE='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers/COSMOTE'
