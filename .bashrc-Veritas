@@ -149,6 +149,8 @@ export PATH="$HOME/.local/bin:$PATH"
 shopt -s cdable_vars
 
 OneDrive='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/'
+Desktop='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Desktop'
+Notes='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/My Notes'
 Notes='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/My Notes'
 Training='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/My Notes/Training'
 Customers='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers'
