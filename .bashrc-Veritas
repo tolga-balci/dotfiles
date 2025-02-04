@@ -56,6 +56,7 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+
 if [ "$color_prompt" = yes ]; then
     #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\$ '
@@ -86,6 +87,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
@@ -97,6 +99,8 @@ alias randomfilename='cat /dev/random | tr -dc a-z0-9 | head -c 20 && echo'
 alias bitwarden='/home/tolga/Downloads/bw'
 alias wtf='/home/tolga/Downloads/wtfutil/wtfutil'
 alias wtfutil='/home/tolga/Downloads/wtfutil/wtfutil'
+
+function dict() { curl "dict://dict.org/d:$1" ; }
 
 # Keep history from all sessions and avoid duplicates
 # Avoid duplicates
