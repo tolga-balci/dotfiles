@@ -155,7 +155,7 @@ shopt -s cdable_vars
 OneDrive='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/'
 Desktop='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Desktop'
 Notes='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/My Notes'
-Notes='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/My Notes'
+Website='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Personal/Github Pages/tolga-balci.github.io'
 Training='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/My Notes/Training'
 Customers='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers'
 Escalations='/mnt/c/Users/tolga.balci/OneDrive - Veritas Technologies LLC/Customers/_Escalations'
